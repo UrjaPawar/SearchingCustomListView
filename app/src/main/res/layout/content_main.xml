@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:orientation="vertical"
+        android:background="@drawable/bg">
+
+    <EditText android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:layout_marginTop="60dp"
+        android:hint="Search Books.."
+        android:textColorHint="#BDBDBD"
+        android:textColor="#FFFFFF"
+        android:background="#1A237E"
+        android:drawableRight="@drawable/ic_action_search"
+        android:inputType="textVisiblePassword"/>
+
+    <ListView
+            android:id="@+id/list"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:padding="20dip"
+            android:listSelector="@drawable/list_selector"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="250dp"
+        android:id="@+id/textview"
+        android:textSize="15sp"
+        android:textColor="#000000"/>
+
+    </LinearLayout>
+
